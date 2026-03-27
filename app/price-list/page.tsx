@@ -275,52 +275,50 @@ export default function PriceListPage() {
               Facial Treatments
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="max-w-3xl mx-auto">
               <div className="bg-white border border-primary/30 p-8 rounded-sm">
-                <h3 className="text-2xl font-serif tracking-widest text-primary mb-6 uppercase text-center">
-                  The Jeanne Facial
+                <h3 className="text-2xl font-serif tracking-widest text-primary mb-8 uppercase text-center">
+                  Facial Price List
                 </h3>
-                <p className="text-3xl font-serif text-primary text-center mb-8">£40</p>
 
-                <h4 className="uppercase tracking-wider text-center mb-4">Includes:</h4>
-                <ul className="space-y-2 text-center">
-                  <li className="text-muted-foreground uppercase tracking-wider">Cleanse</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Analysis</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Double Cleanse</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Exfoliate</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Tone</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Massage</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">Moisturise</li>
-                  <li className="text-muted-foreground uppercase tracking-wider">SPF</li>
+                <ul className="space-y-4 text-muted-foreground mb-10">
+                  <li className="flex justify-between gap-4 border-b border-primary/10 pb-4">
+                    <span className="uppercase tracking-wider">Express Facial (30 mins)</span>
+                    <span className="text-primary font-medium shrink-0">£30</span>
+                  </li>
+                  <li className="flex justify-between gap-4 border-b border-primary/10 pb-4">
+                    <span className="uppercase tracking-wider">Lymphatic Drainage Facial (30 mins)</span>
+                    <span className="text-primary font-medium shrink-0">£40</span>
+                  </li>
+                  <li className="flex justify-between gap-4 border-b border-primary/10 pb-4">
+                    <span className="uppercase tracking-wider">High Frequency Facial (30 mins)</span>
+                    <span className="text-primary font-medium shrink-0">£40</span>
+                  </li>
+                  <li className="flex justify-between gap-4">
+                    <span className="uppercase tracking-wider">LED Luxury Facial (60 mins)</span>
+                    <span className="text-primary font-medium shrink-0">£50</span>
+                  </li>
                 </ul>
 
-                <div className="mt-8 text-center">
-                  <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      variant="outline"
-                      className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
-                    >
-                      Book Now
-                    </Button>
-                  </a>
-                </div>
-              </div>
+                <h4 className="text-xl font-serif tracking-widest text-primary mb-6 uppercase text-center">
+                  LED Light Therapy Add-Ons
+                </h4>
+                <ul className="space-y-4 text-muted-foreground">
+                  <li className="flex justify-between gap-4 border-b border-primary/10 pb-4">
+                    <span className="uppercase tracking-wider">10 minutes</span>
+                    <span className="text-primary font-medium shrink-0">£15</span>
+                  </li>
+                  <li className="flex justify-between gap-4 border-b border-primary/10 pb-4">
+                    <span className="uppercase tracking-wider">15 minutes</span>
+                    <span className="text-primary font-medium shrink-0">£20</span>
+                  </li>
+                  <li className="flex justify-between gap-4">
+                    <span className="uppercase tracking-wider">20 minutes</span>
+                    <span className="text-primary font-medium shrink-0">£25</span>
+                  </li>
+                </ul>
 
-              <div className="bg-white border border-primary/30 p-8 rounded-sm">
-                <h3 className="text-2xl font-serif tracking-widest text-primary mb-6 uppercase text-center">
-                  The Jeanne Extended
-                </h3>
-                <p className="text-3xl font-serif text-primary text-center mb-8">£50</p>
-
-                <h4 className="uppercase tracking-wider text-center mb-4">Includes:</h4>
-                <p className="text-center text-muted-foreground uppercase tracking-wider mb-4">
-                  All that is listed under The Jeanne Facial
-                </p>
-                <p className="text-center text-muted-foreground uppercase tracking-wider">
-                  Plus Facial Electrics Treatment
-                </p>
-
-                <div className="mt-8 text-center">
+                <div className="mt-10 text-center">
                   <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"

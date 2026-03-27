@@ -44,8 +44,9 @@ export default function Home() {
                 <h2 className="text-3xl font-serif tracking-widest text-primary mb-6 uppercase logo-text">About Us</h2>
                 <p className="text-muted-foreground mb-4">
                   THE DERMA LOUNGE is a premier skincare destination in Newport, Wales offering advanced laser hair
-                  removal and personalized facial treatments. Our clinic combines cutting-edge technology with expert
-                  care to deliver exceptional results for all skin types.
+                  removal services and personalised facial treatments, including both relaxation facials and more
+                  results-driven facials. Our clinic combines cutting-edge technology with expert care to deliver
+                  exceptional results for all skin types.
                 </p>
                 <p className="text-muted-foreground mb-6">
                   We believe in a holistic approach to skincare, addressing both surface concerns and underlying factors
@@ -261,14 +262,14 @@ const services = [
   {
     title: "Laser Hair Removal Packages",
     description:
-      "Save 20% when you purchase a package of laser hair removal treatments for multiple areas or sessions.",
+      "Save when purchasing a laser hair removal package. Packages include discounts and can be paid upfront or a payment plan can be arranged. These can be tailored for each individual.",
     price: "20% Discount",
   },
   {
     title: "Facials",
     description:
       "Customized facial treatments to address your specific skin concerns, including cleansing, exfoliation, and hydration.",
-    price: "From £75",
+    price: "From £30",
   },
   {
     title: "Laser Hair Removal Bundle",
