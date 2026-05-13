@@ -257,13 +257,13 @@ const services = [
   {
     title: "Laser Hair Removal",
     description: "Advanced laser technology for permanent hair reduction. Safe and effective for various skin types.",
-    price: "From £50",
+    price: "From £49",
   },
   {
     title: "Laser Hair Removal Packages",
     description:
       "Save when purchasing a laser hair removal package. Packages include discounts and can be paid upfront or a payment plan can be arranged. These can be tailored for each individual.",
-    price: "20% Discount",
+    price: "",
   },
   {
     title: "Facials",
