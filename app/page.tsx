@@ -268,7 +268,7 @@ const services = [
   {
     title: "Facials",
     description:
-      "Customized facial treatments to address your specific skin concerns, including cleansing, exfoliation, and hydration.",
+      "Customised facial treatments to address your specific skin concerns, including cleansing, exfoliation, and hydration.",
     price: "From £30",
   },
   {
