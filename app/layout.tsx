@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "THE DERMA LOUNGE offers premium laser hair removal and facial treatments in Newport, Wales. Visit us at 242 Stow Hill or book your appointment online today.",
   keywords:
     "laser hair removal Newport, facials Wales, skin clinic Newport, beauty treatments Wales, laser treatments UK",
+  verification: {
+    google: "z6EZmBwzMtrt5MlYWQGPksfJ1qK0CMSwimTnABOl8V4",
+  },
 }
 
 export default function RootLayout({
