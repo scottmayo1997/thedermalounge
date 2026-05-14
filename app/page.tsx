@@ -58,6 +58,9 @@ export const metadata: Metadata = {
       "Premium laser hair removal and personalised facial treatments in Newport, Wales. Book your appointment online today.",
     images: ["https://www.thedermalounge.co.uk/hero.jpg"],
   },
+  verification: {
+    google: "z6EZmBwzMtrt5MlYWQGPksfJ1qK0CMSwimTnABOl8V4",
+  },
   other: {
     "geo.region": "GB-WLS",
     "geo.placename": "Newport, Wales",
