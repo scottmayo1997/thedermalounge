@@ -1,8 +1,25 @@
+import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Treatment Price List | The Derma Lounge Newport",
+  description:
+    "View our full price list for laser hair removal and facial treatments at The Derma Lounge in Newport, Wales. Transparent pricing with packages available.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/price-list" },
+  openGraph: {
+    title: "Treatment Price List | The Derma Lounge Newport",
+    description:
+      "View our full price list for laser hair removal and facial treatments at The Derma Lounge in Newport, Wales. Transparent pricing with packages available.",
+    url: "https://www.thedermalounge.co.uk/price-list",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
 
 export const metadata = {
   title: "Price List | THE DERMA LOUNGE",

@@ -1,8 +1,25 @@
+import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Treatment Preparation Guide | The Derma Lounge Newport",
+  description:
+    "How to prepare for your laser hair removal or facial treatment at The Derma Lounge, Newport, Wales. Everything you need to know before your appointment.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/preparation" },
+  openGraph: {
+    title: "Treatment Preparation Guide | The Derma Lounge Newport",
+    description:
+      "How to prepare for your laser hair removal or facial treatment at The Derma Lounge, Newport, Wales. Everything you need to know before your appointment.",
+    url: "https://www.thedermalounge.co.uk/preparation",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
 import { Sun, Scissors, SprayCanIcon as Spray, Trash2, ShowerHead, Droplet } from "lucide-react"
 
 export const metadata = {

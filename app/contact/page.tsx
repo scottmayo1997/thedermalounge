@@ -1,8 +1,25 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Instagram, Mail, MapPin } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Contact Us | The Derma Lounge Newport, Wales",
+  description:
+    "Get in touch with The Derma Lounge at 242 Stow Hill, Newport, Wales. Book a laser hair removal or facial treatment today.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/contact" },
+  openGraph: {
+    title: "Contact Us | The Derma Lounge Newport, Wales",
+    description:
+      "Get in touch with The Derma Lounge at 242 Stow Hill, Newport, Wales. Book a laser hair removal or facial treatment today.",
+    url: "https://www.thedermalounge.co.uk/contact",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
 
 export const metadata = {
   title: "Contact Us | THE DERMA LOUNGE",

@@ -7,10 +7,117 @@ import { FadeIn } from "@/components/fade-in"
 import { TestimonialsCarousel } from "@/components/testimonials-carousel"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "The Derma Lounge | Laser Hair Removal & Facials Newport, Wales",
+  description:
+    "Premium laser hair removal and personalised facial treatments in Newport, Wales. Visit The Derma Lounge at 242 Stow Hill or book your appointment online today.",
+  keywords: [
+    "laser hair removal Newport",
+    "facials Newport Wales",
+    "skin clinic Newport",
+    "beauty treatments Wales",
+    "laser clinic Wales",
+    "The Derma Lounge",
+    "laser hair removal Wales",
+    "facial treatments Newport",
+  ],
+  alternates: {
+    canonical: "https://www.thedermalounge.co.uk",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: "The Derma Lounge | Laser Hair Removal & Facials Newport, Wales",
+    description:
+      "Premium laser hair removal and personalised facial treatments in Newport, Wales. Visit The Derma Lounge at 242 Stow Hill or book your appointment online today.",
+    url: "https://www.thedermalounge.co.uk",
+    siteName: "The Derma Lounge",
+    type: "website",
+    locale: "en_GB",
+    images: [
+      {
+        url: "https://www.thedermalounge.co.uk/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Derma Lounge — Laser Hair Removal & Facials Newport, Wales",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Derma Lounge | Laser Hair Removal & Facials Newport, Wales",
+    description:
+      "Premium laser hair removal and personalised facial treatments in Newport, Wales. Book your appointment online today.",
+    images: ["https://www.thedermalounge.co.uk/hero.jpg"],
+  },
+  other: {
+    "geo.region": "GB-WLS",
+    "geo.placename": "Newport, Wales",
+    "geo.position": "51.5842;-3.0067",
+    "ICBM": "51.5842, -3.0067",
+  },
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "BeautySalon"],
+  name: "The Derma Lounge",
+  url: "https://www.thedermalounge.co.uk",
+  email: "thedermaloungeuk@gmail.com",
+  priceRange: "££",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "242 Stow Hill",
+    addressLocality: "Newport",
+    addressRegion: "Wales",
+    postalCode: "NP20 4HA",
+    addressCountry: "GB",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 51.5842,
+    longitude: -3.0067,
+  },
+  sameAs: ["https://www.instagram.com/thedermalounge_uk/"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Laser Hair Removal" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Laser Hair Removal Packages" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Laser Hair Removal Bundle" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Customised Facials" },
+      },
+    ],
+  },
+}
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader />
 
       <main className="flex-1">

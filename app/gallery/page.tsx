@@ -1,8 +1,25 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { GalleryClient } from "@/components/gallery/gallery-client"
+
+export const metadata: Metadata = {
+  title: "Treatment Gallery | The Derma Lounge Newport",
+  description:
+    "Browse our gallery of results from laser hair removal and facial treatments at The Derma Lounge, Newport, Wales.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/gallery" },
+  openGraph: {
+    title: "Treatment Gallery | The Derma Lounge Newport",
+    description:
+      "Browse our gallery of results from laser hair removal and facial treatments at The Derma Lounge, Newport, Wales.",
+    url: "https://www.thedermalounge.co.uk/gallery",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
 
 export const metadata = {
   title: "Gallery | THE DERMA LOUNGE",

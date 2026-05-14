@@ -1,8 +1,25 @@
+import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Treatment Aftercare Advice | The Derma Lounge Newport",
+  description:
+    "Post-treatment aftercare guidance from The Derma Lounge, Newport. Follow our expert advice to get the best results from your laser hair removal or facial.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/aftercare" },
+  openGraph: {
+    title: "Treatment Aftercare Advice | The Derma Lounge Newport",
+    description:
+      "Post-treatment aftercare guidance from The Derma Lounge, Newport. Follow our expert advice to get the best results from your laser hair removal or facial.",
+    url: "https://www.thedermalounge.co.uk/aftercare",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
 import { Sun, Scissors, Leaf, Trash2, ShowerHead, Droplet } from "lucide-react"
 
 export const metadata = {

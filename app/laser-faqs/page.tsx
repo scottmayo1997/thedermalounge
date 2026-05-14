@@ -1,18 +1,120 @@
+import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export const metadata = {
-  title: "Laser Hair Removal FAQs | THE DERMA LOUNGE",
+export const metadata: Metadata = {
+  title: "Laser Hair Removal FAQs | The Derma Lounge Newport",
   description:
-    "Find answers to frequently asked questions about laser hair removal treatments at THE DERMA LOUNGE in Newport, Wales.",
+    "Everything you need to know about laser hair removal. Read our frequently asked questions at The Derma Lounge, Newport's premier skin and laser clinic.",
+  alternates: { canonical: "https://www.thedermalounge.co.uk/laser-faqs" },
+  openGraph: {
+    title: "Laser Hair Removal FAQs | The Derma Lounge Newport",
+    description:
+      "Everything you need to know about laser hair removal. Read our frequently asked questions at The Derma Lounge, Newport's premier skin and laser clinic.",
+    url: "https://www.thedermalounge.co.uk/laser-faqs",
+    siteName: "The Derma Lounge",
+    locale: "en_GB",
+    type: "website",
+  },
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is laser hair removal?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A beam of light energy is used to break down and destroy the hair follicle. The laser targets the pigment (melanin) in the hair follicle, heating it up and damaging it to prevent future hair growth. Once the hair follicle is destroyed, a hair cannot regrow. However, hormonal changes and other factors could trigger another follicle to grow a hair in the future.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How many treatments will I need?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend a minimum of 6 treatments, with some hair types requiring more. The average for a successful program is 8-10 treatments. It is very important to complete all treatments for optimum results.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does the treatment take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The treatment is relatively quick and easy. The length of time depends on the area being treated. The treatment consists of the applicator sweeping back and forth across the desired area in a quick motion.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is laser hair removal painful?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most clients describe the sensation as a mild pinching or warm feeling. The level of discomfort varies depending on the individual's pain tolerance and the area being treated. Our advanced laser technology includes cooling features to minimize discomfort during treatment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is laser hair removal permanent?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Laser hair removal provides long-lasting hair reduction. While the treatment destroys the hair follicles, new follicles can develop due to hormonal changes or other factors over time. Most clients experience significant and permanent hair reduction, but maintenance treatments may be needed periodically.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How should I prepare for my treatment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Proper preparation is essential for effective laser hair removal. Key steps include: avoid sun exposure for at least 3 days before treatment; shave the area 24-48 hours before your appointment; no fake tan or spray tan for at least 2 weeks before treatment; avoid waxing, bleaching or plucking for 4 weeks before treatment; ensure the treatment area is clean and free from products; avoid essential oils for 48 hours before treatment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What aftercare is required?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "After your laser hair removal treatment: avoid sun exposure for at least 4 days after treatment and use SPF 30+; no shaving or applying perfume/deodorant to the area for 24-48 hours; apply aloe vera or use cool packs if the area is red, warm or swollen; avoid hot baths, showers, saunas and intense exercise for 2-3 days; avoid retinols, AHAs and glycolic acids for 5-7 days.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long should I wait between treatments?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Typically, treatments are scheduled 4-6 weeks apart for facial areas and 6-8 weeks apart for body areas. Your practitioner will create a personalised treatment schedule based on your specific needs.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are your booking and cancellation policies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Booking Policy: A 25% non-refundable deposit will be taken during your initial consultation to secure your first treatment session. This is redeemable against your treatment. Cancellation Policy: Cancellations must be made no later than 48 hours before your appointment for a full refund.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does laser hair removal cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our prices vary depending on the treatment area: Large areas (Full Leg, Full Back, etc.) are £129 per session; Medium areas (Half Leg, Brazilian, etc.) are £89 per session; Small areas (Underarm, Bikini, etc.) are £49 per session; Micro areas (Upper Lip, Chin, etc.) are £29 per session. We offer significant discounts on packages of multiple treatments.",
+      },
+    },
+  ],
 }
 
 export default function LaserFAQsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader />
       <main>
         <PageHeader
