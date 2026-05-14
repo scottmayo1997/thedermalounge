@@ -21,11 +21,6 @@ export const metadata: Metadata = {
   },
 }
 
-export const metadata = {
-  title: "Gallery | THE DERMA LOUNGE",
-  description:
-    "View before and after photos of our treatments at THE DERMA LOUNGE. See the results of our laser hair removal and facial treatments.",
-}
 
 export default function GalleryPage() {
   return (

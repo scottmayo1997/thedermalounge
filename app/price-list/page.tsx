@@ -21,11 +21,6 @@ export const metadata: Metadata = {
   },
 }
 
-export const metadata = {
-  title: "Price List | THE DERMA LOUNGE",
-  description:
-    "View our comprehensive price list for laser hair removal and facial treatments at THE DERMA LOUNGE in Newport, Wales.",
-}
 
 export default function PriceListPage() {
   return (

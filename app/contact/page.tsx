@@ -21,11 +21,6 @@ export const metadata: Metadata = {
   },
 }
 
-export const metadata = {
-  title: "Contact Us | THE DERMA LOUNGE",
-  description:
-    "Get in touch with THE DERMA LOUNGE. Visit us at 242 Stow Hill, Newport, Wales or contact us via Instagram @thedermalounge_uk.",
-}
 
 export default function ContactPage() {
   return (

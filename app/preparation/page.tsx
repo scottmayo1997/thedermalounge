@@ -22,11 +22,6 @@ export const metadata: Metadata = {
 }
 import { Sun, Scissors, SprayCanIcon as Spray, Trash2, ShowerHead, Droplet } from "lucide-react"
 
-export const metadata = {
-  title: "Pre-Treatment Guidelines | THE DERMA LOUNGE",
-  description:
-    "Essential preparation guidelines for your laser hair removal treatment at THE DERMA LOUNGE in Newport, Wales.",
-}
 
 export default function PreparationPage() {
   return (

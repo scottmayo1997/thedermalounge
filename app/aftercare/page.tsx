@@ -22,11 +22,6 @@ export const metadata: Metadata = {
 }
 import { Sun, Scissors, Leaf, Trash2, ShowerHead, Droplet } from "lucide-react"
 
-export const metadata = {
-  title: "Aftercare Guidelines | THE DERMA LOUNGE",
-  description:
-    "Essential aftercare guidelines following your laser hair removal treatment at THE DERMA LOUNGE in Newport, Wales.",
-}
 
 export default function AftercarePage() {
   return (
