@@ -3,6 +3,8 @@ import { Instagram, Mail, MapPin, Phone } from "lucide-react"
 import { ServiceCard } from "@/components/service-card"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { FadeIn } from "@/components/fade-in"
+import { TestimonialsCarousel } from "@/components/testimonials-carousel"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -15,7 +17,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[80vh] bg-primary">
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hero-fade-in" style={{ animationDelay: "0.1s" }}>
               <h2 className="text-5xl md:text-7xl font-serif text-white mb-2 tracking-widest uppercase logo-text">
                 THE
               </h2>
@@ -25,14 +27,18 @@ export default function Home() {
               <h2 className="text-5xl md:text-7xl font-serif text-white mb-6 tracking-widest uppercase logo-text">
                 LOUNGE
               </h2>
+            </div>
+            <div className="flex flex-col items-center hero-fade-in" style={{ animationDelay: "0.45s" }}>
               <div className="w-24 h-px bg-white mb-4"></div>
               <p className="text-white uppercase tracking-widest subtitle-text mb-12">SKIN AND LASER CLINIC</p>
             </div>
-            <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider">
-                Book Your Appointment
-              </Button>
-            </a>
+            <div className="hero-fade-in" style={{ animationDelay: "0.8s" }}>
+              <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider btn-booking">
+                  Book Your Appointment
+                </Button>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -40,35 +46,39 @@ export default function Home() {
         <section id="about" className="py-16 bg-white">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-serif tracking-widest text-primary mb-6 uppercase logo-text">About Us</h2>
-                <p className="text-muted-foreground mb-4">
-                  THE DERMA LOUNGE is a premier skincare destination in Newport, Wales offering advanced laser hair
-                  removal services and personalised facial treatments, including both relaxation facials and more
-                  results-driven facials. Our clinic combines cutting-edge technology with expert care to deliver
-                  exceptional results for all skin types.
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  We believe in a holistic approach to skincare, addressing both surface concerns and underlying factors
-                  to achieve lasting radiance and health. Our team of qualified professionals is dedicated to providing
-                  safe, effective treatments in a relaxing environment.
-                </p>
-                <Link href="/price-list">
-                  <Button
-                    variant="outline"
-                    className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
-                  >
-                    View Price List
-                  </Button>
-                </Link>
-              </div>
-              <div className="relative h-[400px] w-full overflow-hidden">
-                <img
-                  src="/thedermalounge-photo.jpg"
-                  alt="The Derma Lounge clinic"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <FadeIn>
+                <div>
+                  <h2 className="text-3xl font-serif tracking-widest text-primary mb-6 uppercase logo-text">About Us</h2>
+                  <p className="text-muted-foreground mb-4">
+                    THE DERMA LOUNGE is a premier skincare destination in Newport, Wales offering advanced laser hair
+                    removal services and personalised facial treatments, including both relaxation facials and more
+                    results-driven facials. Our clinic combines cutting-edge technology with expert care to deliver
+                    exceptional results for all skin types.
+                  </p>
+                  <p className="text-muted-foreground mb-6">
+                    We believe in a holistic approach to skincare, addressing both surface concerns and underlying factors
+                    to achieve lasting radiance and health. Our team of qualified professionals is dedicated to providing
+                    safe, effective treatments in a relaxing environment.
+                  </p>
+                  <Link href="/price-list">
+                    <Button
+                      variant="outline"
+                      className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                    >
+                      View Price List
+                    </Button>
+                  </Link>
+                </div>
+              </FadeIn>
+              <FadeIn delay={150}>
+                <div className="relative h-[400px] w-full overflow-hidden">
+                  <img
+                    src="/thedermalounge-photo.jpg"
+                    alt="The Derma Lounge clinic"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </FadeIn>
             </div>
           </div>
         </section>
@@ -81,12 +91,13 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <ServiceCard
-                  key={index}
-                  title={service.title}
-                  description={service.description}
-                  price={service.price}
-                />
+                <FadeIn key={index} delay={index * 100}>
+                  <ServiceCard
+                    title={service.title}
+                    description={service.description}
+                    price={service.price}
+                  />
+                </FadeIn>
               ))}
             </div>
           </div>
@@ -98,20 +109,9 @@ export default function Home() {
             <h2 className="text-3xl font-serif tracking-widest text-primary mb-12 text-center uppercase logo-text">
               Client Testimonials
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="p-6 border border-primary/20">
-                  <p className="text-muted-foreground italic mb-6">"{testimonial.quote}"</p>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-px bg-primary"></div>
-                    <div>
-                      <h3 className="font-medium uppercase tracking-wider text-sm">{testimonial.name}</h3>
-                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <FadeIn>
+              <TestimonialsCarousel testimonials={testimonials} />
+            </FadeIn>
           </div>
         </section>
 
@@ -240,7 +240,7 @@ export default function Home() {
               today.
             </p>
             <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider">
+              <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider btn-booking">
                 Book Now
               </Button>
             </a>

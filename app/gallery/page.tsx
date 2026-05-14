@@ -28,7 +28,7 @@ export default function GalleryPage() {
               beautiful, radiant skin.
             </p>
             <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider">
+              <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider btn-booking">
                 Book Your Appointment
               </Button>
             </a>

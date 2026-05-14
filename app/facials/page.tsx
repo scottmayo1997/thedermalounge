@@ -322,7 +322,7 @@ export default function FacialsPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider w-full sm:w-auto">
+                <Button className="bg-white hover:bg-white/90 text-primary rounded-none px-8 py-6 uppercase tracking-wider w-full sm:w-auto btn-booking">
                   Book Now
                 </Button>
               </a>

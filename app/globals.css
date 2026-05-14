@@ -67,3 +67,32 @@
   font-size: 0.9rem;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.9s ease-out forwards;
+}
+
+@keyframes bookingGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px 0px hsla(27, 40%, 62%, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 16px 5px hsla(27, 40%, 62%, 0.32);
+  }
+}
+
+.btn-booking {
+  animation: bookingGlow 2.8s ease-in-out infinite;
+}
+

@@ -59,7 +59,7 @@ export default function ServicesPage() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-primary hover:bg-primary/90 text-white rounded-none px-8 py-6 uppercase tracking-wider w-full sm:w-auto">
+            <Button className="bg-primary hover:bg-primary/90 text-white rounded-none px-8 py-6 uppercase tracking-wider w-full sm:w-auto btn-booking">
               Book Now
             </Button>
           </Link>

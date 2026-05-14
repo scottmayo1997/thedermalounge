@@ -9,7 +9,7 @@ export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="border-b border-muted">
+    <header className="sticky top-0 z-50 border-b border-muted bg-white/90 backdrop-blur-md shadow-sm">
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2">
           <h1 className="text-2xl font-serif tracking-widest text-primary uppercase logo-text">THE DERMA LOUNGE</h1>
@@ -60,7 +60,7 @@ export function SiteHeader() {
           <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
-              className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase text-sm tracking-wider"
+              className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase text-sm tracking-wider btn-booking"
             >
               Book Now
             </Button>
@@ -140,7 +140,7 @@ export function SiteHeader() {
             >
               <Button
                 variant="outline"
-                className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase text-sm tracking-wider w-full"
+                className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase text-sm tracking-wider w-full btn-booking"
               >
                 Book Now
               </Button>

@@ -125,7 +125,7 @@ export default function FAQPage() {
                 <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
                   <Button
                     variant="outline"
-                    className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider w-full sm:w-auto"
+                    className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider w-full sm:w-auto btn-booking"
                   >
                     Book Now
                   </Button>
