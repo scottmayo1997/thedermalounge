@@ -373,7 +373,7 @@ const services = [
     title: "Laser Hair Removal Packages",
     description:
       "Save when purchasing a laser hair removal package. Packages include discounts and can be paid upfront or a payment plan can be arranged. These can be tailored for each individual.",
-    price: "",
+    price: "From £70",
   },
   {
     title: "Facials",
