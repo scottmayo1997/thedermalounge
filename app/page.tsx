@@ -395,7 +395,7 @@ const testimonials = [
     quote: "Amazing 😍😍😍 Lucy is fab, 100% recommend!!",
   },
   {
-    name: "Client",
+    name: "Myah",
     location: "Newport, Wales",
     quote:
       "Lucy was super welcoming, knowledgable and confident in what she does and very easy to talk to. Can't wait for my next session!",
