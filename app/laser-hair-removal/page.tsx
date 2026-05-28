@@ -164,6 +164,175 @@ export default function LaserHairRemovalPage() {
           </div>
         </section>
 
+        {/* ── PRICING TIERS MOCKUP ── */}
+        <section className="py-20">
+          <div className="container max-w-5xl">
+            <div className="text-center mb-14">
+              <p className="text-xs tracking-[0.3em] text-primary/50 uppercase mb-3">Treatment Packages</p>
+              <h2 className="text-3xl font-serif tracking-widest text-primary mb-5 uppercase logo-text">
+                Choose Your Course
+              </h2>
+              <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
+                Save more the longer you commit. Prices illustrated using Full Leg — all courses are available
+                across every treatment area.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+
+              {/* Tier 1 — Single Session */}
+              <div className="border border-primary/20 bg-white p-8 flex flex-col">
+                <div className="mb-6">
+                  <h3 className="text-xl font-serif tracking-widest text-primary uppercase mb-1">
+                    Single Session
+                  </h3>
+                  <p className="text-xs tracking-widest text-muted-foreground/60 uppercase">Pay as you go</p>
+                </div>
+
+                <div className="border-t border-primary/10 pt-6 mb-6">
+                  <p className="text-5xl font-serif text-primary leading-none mb-1">£129</p>
+                  <p className="text-sm text-muted-foreground">per session</p>
+                </div>
+
+                <ul className="space-y-3 text-sm text-muted-foreground mb-10 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>Standard full-price rate</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>No commitment required</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>Book whenever suits you</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>All treatment areas available</span>
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                  >
+                    Book Now
+                  </Button>
+                </a>
+              </div>
+
+              {/* Tier 2 — Course of 6 (Most Popular) */}
+              <div className="bg-primary relative flex flex-col p-8 md:py-12">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                  <span className="bg-white text-primary text-xs tracking-[0.2em] uppercase px-5 py-1.5 font-medium">
+                    Most Popular
+                  </span>
+                </div>
+
+                <div className="mb-6 mt-2">
+                  <h3 className="text-xl font-serif tracking-widest text-white uppercase mb-1">
+                    Course of 6
+                  </h3>
+                  <p className="text-xs tracking-widest text-white/60 uppercase">Recommended for full results</p>
+                </div>
+
+                <div className="border-t border-white/20 pt-6 mb-6">
+                  <div className="flex items-baseline gap-1 mb-1">
+                    <p className="text-5xl font-serif text-white leading-none">£103</p>
+                    <p className="text-white/70 text-sm">/ session</p>
+                  </div>
+                  <p className="text-sm text-white/70 mb-3">Total: £619</p>
+                  <p className="inline-block text-xs tracking-widest uppercase bg-white/20 text-white px-3 py-1">
+                    You save £155
+                  </p>
+                </div>
+
+                <ul className="space-y-3 text-sm text-white/80 mb-10 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-white shrink-0 mt-px">—</span>
+                    <span>20% off the single-session price</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white shrink-0 mt-px">—</span>
+                    <span>Split over 3 instalments</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white shrink-0 mt-px">—</span>
+                    <span>Ideal number for most clients</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white shrink-0 mt-px">—</span>
+                    <span>All treatment areas available</span>
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full rounded-none bg-white text-primary hover:bg-white/90 uppercase tracking-wider">
+                    Book Course
+                  </Button>
+                </a>
+              </div>
+
+              {/* Tier 3 — Course of 8 (Best Value) */}
+              <div className="border border-primary/20 bg-white p-8 flex flex-col">
+                <div className="mb-6">
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h3 className="text-xl font-serif tracking-widest text-primary uppercase leading-tight">
+                      Course of 8
+                    </h3>
+                    <span className="shrink-0 text-xs tracking-widest uppercase bg-primary/10 text-primary px-2 py-1 mt-0.5">
+                      Best Value
+                    </span>
+                  </div>
+                  <p className="text-xs tracking-widest text-muted-foreground/60 uppercase">Maximum saving</p>
+                </div>
+
+                <div className="border-t border-primary/10 pt-6 mb-6">
+                  <p className="text-5xl font-serif text-primary leading-none mb-1">£752</p>
+                  <p className="text-sm text-muted-foreground mb-3">total course · £94 per session</p>
+                  <p className="text-sm font-medium text-primary">You save £280</p>
+                </div>
+
+                <ul className="space-y-3 text-sm text-muted-foreground mb-10 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>Lowest per-session price</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>Flexible payment available</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>Complete course for optimal results</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0 mt-px">—</span>
+                    <span>All treatment areas available</span>
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                  >
+                    Book Course
+                  </Button>
+                </a>
+              </div>
+
+            </div>
+
+            <p className="text-center text-xs tracking-widest text-muted-foreground/50 uppercase mt-10">
+              Prices shown are illustrative using Full Leg · Your personalised quote discussed at consultation
+            </p>
+          </div>
+        </section>
+        {/* ── END PRICING TIERS MOCKUP ── */}
+
         <section className="py-16 bg-primary">
           <div className="container text-center">
             <h2 className="text-3xl font-serif tracking-widest text-white mb-6 uppercase logo-text">
