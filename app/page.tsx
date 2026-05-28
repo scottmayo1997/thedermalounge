@@ -201,7 +201,7 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <FadeIn key={index} delay={index * 100}>
+                <FadeIn key={index} delay={index * 100} className="h-full">
                   <ServiceCard
                     title={service.title}
                     description={service.description}
@@ -212,6 +212,186 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* ── Laser Hair Removal Pricing Tiers — MOCKUP ── */}
+        <section className="py-20 bg-white">
+          <div className="container">
+            <div className="text-center mb-14">
+              <p className="text-xs tracking-[0.3em] text-primary/50 uppercase mb-3">Course Packages</p>
+              <h2 className="text-3xl font-serif tracking-widest text-primary mb-5 uppercase logo-text">
+                Laser Hair Removal Pricing
+              </h2>
+              <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
+                Prices shown for Full Leg. Packages apply across every treatment area — your tailored quote is confirmed at consultation.
+              </p>
+            </div>
+
+            {/* gap-px + bg on the grid creates a hairline divider between cards */}
+            <div className="grid md:grid-cols-3 max-w-4xl mx-auto gap-px bg-primary/20 overflow-hidden">
+
+              {/* Left — Single Session */}
+              <div className="relative bg-white p-8 md:p-10 flex flex-col overflow-hidden">
+                <h3 className="text-xl font-serif tracking-widest text-primary uppercase mb-1">
+                  Single Session
+                </h3>
+                <p className="text-xs tracking-widest text-muted-foreground/60 uppercase mb-6">No commitment</p>
+
+                <div className="border-t border-primary/10 pt-6 mb-4">
+                  <p className="text-5xl font-serif text-primary leading-none mb-1">£129</p>
+                  <p className="text-sm text-muted-foreground">per session</p>
+                </div>
+
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                  The standard single-session rate. Book when it suits you with no upfront commitment required.
+                </p>
+
+                <ul className="space-y-2.5 text-sm text-muted-foreground mb-8 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Standard full-price rate
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    All treatment areas
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Flexible scheduling
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    No upfront commitment
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                  >
+                    Book Now
+                  </Button>
+                </a>
+              </div>
+
+              {/* Middle — Course of 6 (Most Popular) */}
+              <div className="relative bg-stone-800 p-8 md:p-10 flex flex-col overflow-hidden">
+                {/* Diagonal corner ribbon */}
+                <div className="absolute top-0 right-0 w-24 h-24 overflow-hidden pointer-events-none">
+                  <div className="absolute top-[18px] right-[-32px] w-[120px] rotate-45 py-1 bg-primary text-white text-[9px] tracking-[0.2em] uppercase text-center font-medium">
+                    Most Popular
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-serif tracking-widest text-white uppercase mb-1">
+                  Course of 6
+                </h3>
+                <p className="text-xs tracking-widest text-white/50 uppercase mb-6">Recommended for full results</p>
+
+                <div className="border-t border-white/10 pt-6 mb-4">
+                  <div className="flex items-baseline gap-1.5 mb-1">
+                    <p className="text-5xl font-serif text-white leading-none">£103</p>
+                    <span className="text-white/60 text-sm">/ session</span>
+                  </div>
+                  <p className="text-sm text-white/60 mb-3">Total: £619</p>
+                  <span className="inline-block text-xs tracking-widest uppercase bg-primary/40 text-white px-3 py-1">
+                    Save £155
+                  </span>
+                </div>
+
+                <p className="text-sm text-white/70 leading-relaxed mb-6">
+                  Our most popular course. Commit to six sessions, save 20% on every visit, and split the cost over three instalments.
+                </p>
+
+                <ul className="space-y-2.5 text-sm text-white/70 mb-8 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    20% off single-session price
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    All treatment areas
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Split over 3 instalments
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Ideal number for full results
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full rounded-none bg-primary hover:bg-primary/90 text-white uppercase tracking-wider">
+                    Book Course
+                  </Button>
+                </a>
+              </div>
+
+              {/* Right — Course of 8 (Best Value) */}
+              <div className="relative bg-white p-8 md:p-10 flex flex-col overflow-hidden">
+                {/* Diagonal corner ribbon */}
+                <div className="absolute top-0 right-0 w-24 h-24 overflow-hidden pointer-events-none">
+                  <div className="absolute top-[18px] right-[-32px] w-[120px] rotate-45 py-1 bg-stone-800 text-white text-[9px] tracking-[0.2em] uppercase text-center font-medium">
+                    Best Value
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-serif tracking-widest text-primary uppercase mb-1">
+                  Course of 8
+                </h3>
+                <p className="text-xs tracking-widest text-muted-foreground/60 uppercase mb-6">Maximum saving</p>
+
+                <div className="border-t border-primary/10 pt-6 mb-4">
+                  <p className="text-5xl font-serif text-primary leading-none mb-1">£752</p>
+                  <p className="text-sm text-muted-foreground mb-3">total · £94 per session</p>
+                  <span className="inline-block text-xs tracking-widest uppercase bg-primary/10 text-primary px-3 py-1">
+                    Save £280
+                  </span>
+                </div>
+
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                  The best-value course for lasting results. Eight sessions at our lowest per-visit rate, with flexible payment available.
+                </p>
+
+                <ul className="space-y-2.5 text-sm text-muted-foreground mb-8 flex-1">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Lowest per-session price
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    All treatment areas
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Flexible payment available
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary shrink-0">—</span>
+                    Optimal long-term results
+                  </li>
+                </ul>
+
+                <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                  >
+                    Book Course
+                  </Button>
+                </a>
+              </div>
+
+            </div>
+
+            <p className="text-center text-xs tracking-widest text-muted-foreground/50 uppercase mt-10">
+              Prices illustrated using Full Leg · All treatment areas available · Tailored quote at consultation
+            </p>
+          </div>
+        </section>
+        {/* ── END PRICING TIERS MOCKUP ── */}
 
         {/* Testimonials */}
         <section className="py-16 bg-white">

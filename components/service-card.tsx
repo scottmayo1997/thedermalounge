@@ -9,9 +9,9 @@ interface ServiceCardProps {
 
 export function ServiceCard({ title, description, price }: ServiceCardProps) {
   return (
-    <div className="border border-primary/20 p-6 hover:border-primary transition-colors bg-white">
+    <div className="border border-primary/20 p-6 hover:border-primary transition-colors bg-white h-full flex flex-col">
       <h3 className="text-xl font-serif tracking-widest text-primary mb-4 uppercase">{title}</h3>
-      <p className="text-muted-foreground mb-4">{description}</p>
+      <p className="text-muted-foreground mb-4 flex-1">{description}</p>
       <div className="flex justify-between items-center">
         <p className="text-primary font-medium">{price}</p>
         <Link href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
