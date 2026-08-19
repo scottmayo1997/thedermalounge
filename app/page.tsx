@@ -89,6 +89,7 @@ const jsonLd = {
     latitude: 51.5842,
     longitude: -3.0067,
   },
+  openingHours: ["We-Fr 14:00-20:00", "Sa 08:00-17:00"],
   sameAs: ["https://www.instagram.com/thedermalounge_uk/"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -170,14 +171,14 @@ export default function Home() {
                     to achieve lasting radiance and health. Our team of qualified professionals is dedicated to providing
                     safe, effective treatments in a relaxing environment.
                   </p>
-                  <Link href="/price-list">
+                  <a href="https://the-derma-lounge.book.app/book-now" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
-                      className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider"
+                      className="rounded-none border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-wider btn-booking"
                     >
-                      View Price List
+                      Book
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </FadeIn>
               <FadeIn delay={150}>
@@ -222,6 +223,33 @@ export default function Home() {
             <FadeIn>
               <TestimonialsCarousel testimonials={testimonials} />
             </FadeIn>
+          </div>
+        </section>
+
+        {/* Policies */}
+        <section className="py-16 bg-secondary/30">
+          <div className="container max-w-5xl">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-primary/10 p-8 text-center">
+                <h3 className="text-xl font-serif tracking-widest text-primary mb-4 uppercase">Payment Options</h3>
+                <p className="text-muted-foreground">
+                  Flexible payment options available.
+                </p>
+              </div>
+              <div className="bg-primary/10 p-8 text-center">
+                <h3 className="text-xl font-serif tracking-widest text-primary mb-4 uppercase">Booking Policy</h3>
+                <p className="text-muted-foreground">
+                  A 25% non-refundable deposit will be taken during your initial consultation to secure your first
+                  treatment session. This is redeemable against your treatment.
+                </p>
+              </div>
+              <div className="bg-primary/10 p-8 text-center">
+                <h3 className="text-xl font-serif tracking-widest text-primary mb-4 uppercase">Cancellation Policy</h3>
+                <p className="text-muted-foreground">
+                  Cancellations must be made no later than 48 hours before your appointment for a full refund.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -367,24 +395,13 @@ const services = [
   {
     title: "Laser Hair Removal",
     description: "Advanced laser technology for permanent hair reduction. Safe and effective for various skin types.",
-    price: "From £49",
-  },
-  {
-    title: "Laser Hair Removal Packages",
-    description:
-      "Save when purchasing a laser hair removal package. Packages include discounts and can be paid upfront or a payment plan can be arranged. These can be tailored for each individual.",
-    price: "From £70",
+    price: "From £35",
   },
   {
     title: "Facials",
     description:
       "Customised facial treatments to address your specific skin concerns, including cleansing, exfoliation, and hydration.",
     price: "From £30",
-  },
-  {
-    title: "Laser Hair Removal Bundle",
-    description: "Buy 6 sessions and get 2 free. Our most popular option for achieving optimal results.",
-    price: "Buy 6 Get 2 Free",
   },
 ]
 

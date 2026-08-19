@@ -37,14 +37,6 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/price-list"
-                  className="text-white/80 hover:text-white transition-colors uppercase tracking-wider text-sm"
-                >
-                  Price List
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/laser-faqs"
                   className="text-white/80 hover:text-white transition-colors uppercase tracking-wider text-sm"
                 >

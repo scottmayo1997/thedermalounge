@@ -150,11 +150,7 @@ const faqs: { question: string; answer: React.ReactNode }[] = [
           <li>— Micro areas (Upper Lip, Chin, etc.): £29 per session</li>
         </ul>
         <p className="text-muted-foreground">
-          We offer significant discounts on packages of multiple treatments.{" "}
-          <Link href="/price-list" className="text-primary hover:underline">
-            View our complete Price List
-          </Link>{" "}
-          for detailed information.
+          We offer significant discounts on packages of multiple treatments.
         </p>
       </>
     ),

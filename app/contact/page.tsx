@@ -88,15 +88,15 @@ export default function ContactPage() {
                   <h3 className="font-medium uppercase tracking-wider text-sm mb-4">Opening Hours</h3>
                   <ul className="space-y-2">
                     <li className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>9:00 AM - 6:00 PM</span>
+                      <span>Wednesday – Friday</span>
+                      <span>14:00 – 20:00</span>
                     </li>
                     <li className="flex justify-between">
                       <span>Saturday</span>
-                      <span>10:00 AM - 4:00 PM</span>
+                      <span>08:00 – 17:00</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Sunday</span>
+                      <span>Sunday – Tuesday</span>
                       <span>Closed</span>
                     </li>
                   </ul>

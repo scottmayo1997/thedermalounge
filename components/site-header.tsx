@@ -22,12 +22,6 @@ export function SiteHeader() {
             Home
           </Link>
           <Link
-            href="/price-list"
-            className="text-muted-foreground hover:text-primary transition-colors uppercase text-sm tracking-wider"
-          >
-            Price List
-          </Link>
-          <Link
             href="/laser-faqs"
             className="text-muted-foreground hover:text-primary transition-colors uppercase text-sm tracking-wider"
           >
@@ -82,13 +76,6 @@ export function SiteHeader() {
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </Link>
-            <Link
-              href="/price-list"
-              className="text-muted-foreground hover:text-primary transition-colors uppercase text-sm tracking-wider"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Price List
             </Link>
             <Link
               href="/laser-faqs"
