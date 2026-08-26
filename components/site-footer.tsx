@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-serif tracking-widest mb-4 uppercase logo-text">THE DERMA LOUNGE</h3>
             <div className="w-16 h-px bg-white mb-4"></div>
@@ -66,6 +66,31 @@ export function SiteFooter() {
                 >
                   Contact
                 </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-medium mb-4 uppercase tracking-wider">Policies and Procedures</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/patient-guide.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-white transition-colors uppercase tracking-wider text-sm"
+                >
+                  Patient Guide
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/policies-and-procedures.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-white transition-colors uppercase tracking-wider text-sm"
+                >
+                  Policies and Procedures
+                </a>
               </li>
             </ul>
           </div>
