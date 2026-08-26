@@ -182,11 +182,11 @@ export default function Home() {
                 </div>
               </FadeIn>
               <FadeIn delay={150}>
-                <div className="relative h-[400px] w-full overflow-hidden">
+                <div className="relative aspect-[3/4] w-full overflow-hidden bg-primary/5">
                   <img
-                    src="/thedermalounge-photo.jpg"
-                    alt="The Derma Lounge clinic"
-                    className="w-full h-full object-cover"
+                    src="/lucy-thomas-hero.jpg"
+                    alt="Lucy Thomas at The Derma Lounge"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </FadeIn>
